@@ -5,15 +5,15 @@
 class Shrinkr < Formula
   desc "Fast image compression & format conversion CLI tool"
   homepage "https://github.com/idrewlong/shrinkr_cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   depends_on "vips"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/idrewlong/shrinkr_cli/releases/download/v1.0.0/shrinkr_1.0.0_darwin_arm64.tar.gz"
-    sha256 "877b49c60a11a6c4158a0c2340bcfa73e662174e5d15933847826c69879181f9"
+    url "https://github.com/idrewlong/shrinkr_cli/releases/download/v1.1.0/shrinkr_1.1.0_darwin_arm64.tar.gz"
+    sha256 "9a12dc680208530a90240c8bf90e1af8889892726a02475c7cb382d466625e07"
 
     define_method(:install) do
       bin.install "shrinkr"
