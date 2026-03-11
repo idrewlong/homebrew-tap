@@ -16,7 +16,7 @@ class Morphr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/idrewlong/morphr/releases/download/v1.0.0/morphr_1.0.0_darwin_amd64.tar.gz"
-      sha256 "933e613b8840cd2ec4c1540db1d03eba7b00e6ad49a495b9be229cc36aafa702"
+      sha256 "8c8550d3770658567f155e498ed8224509797c7bf4612cb11ecc32b5b349558e"
 
       define_method(:install) do
         bin.install "morphr"
@@ -24,7 +24,7 @@ class Morphr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/idrewlong/morphr/releases/download/v1.0.0/morphr_1.0.0_darwin_arm64.tar.gz"
-      sha256 "0c9a5265b4434d66df07c2cfa82ef38d1476a65c884f64a86a283d622414490e"
+      sha256 "f43307b68f53c295c8b4899dd23f8082938fd9d088907d0151f74da1ff3ffe15"
 
       define_method(:install) do
         bin.install "morphr"
@@ -35,14 +35,14 @@ class Morphr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/idrewlong/morphr/releases/download/v1.0.0/morphr_1.0.0_linux_amd64.tar.gz"
-      sha256 "6347e116002b00bdb3a16c5dedf9aa8db00e6888155756e8a543760f671d9fed"
+      sha256 "410c9ccf22dce6f10ae901e560863617955a084b5fdafaa750c59d5a11db1028"
       define_method(:install) do
         bin.install "morphr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/idrewlong/morphr/releases/download/v1.0.0/morphr_1.0.0_linux_arm64.tar.gz"
-      sha256 "7a7a3d68e1082138a5823d4f255f2b2c57a085f16011bd98e36d885c6e22ddf8"
+      sha256 "3d0dc5999cbd12b4da2a022c7c606679e6cc412a47c5d3b93714c4c1af6031de"
       define_method(:install) do
         bin.install "morphr"
       end
